@@ -1,0 +1,28 @@
+folder = "Shared"
+
+address_objects = {
+  "web-server" = {
+    description = "Production web server"
+    ip_netmask  = "10.0.1.100/32"
+  }
+
+  "internal-subnet" = {
+    description = "Internal LAN segment"
+    ip_netmask  = "192.168.1.0/24"
+  }
+
+  "dhcp-pool" = {
+    description = "DHCP address pool"
+    ip_range    = "192.168.1.100-192.168.1.200"
+  }
+
+  "example-site" = {
+    description = "Example external website"
+    fqdn        = "example.com"
+  }
+
+  "wildcard-obj" = {
+    description = "Wildcard match for 10.x subnets"
+    ip_wildcard = "10.0.0.0/0.255.255.255"
+  }
+}
