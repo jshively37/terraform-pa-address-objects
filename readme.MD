@@ -32,6 +32,6 @@ To install Terraform, use the following link: https://developer.hashicorp.com/te
 
 ## Passing variables via a file
 * Create a `terraform.tfvars` file.
-  * `terraform.tfvars.example` is an example of the expected outputs.
+  * `terraform.tfvars.example` is an example of the expected address group format.
 * Run `terraform plan`.
 * If you are happy with the output run `terraform apply`.
