@@ -10,9 +10,7 @@ resource "scm_address" "ip_netmask" {
   name        = each.key
   folder      = var.folder
   description = each.value.description
-
   ip_netmask = each.value.ip_netmask
-
 }
 
 # --- IP Range address objects ---
@@ -26,8 +24,6 @@ resource "scm_address" "ip_range" {
   folder      = var.folder
   description = each.value.description
   ip_range    = each.value.ip_range
-
-
 }
 
 # --- FQDN address objects ---
@@ -41,8 +37,6 @@ resource "scm_address" "fqdn" {
   folder      = var.folder
   description = each.value.description
   fqdn        = each.value.fqdn
-
-
 }
 
 # --- IP Wildcard address objects ---
@@ -56,6 +50,4 @@ resource "scm_address" "ip_wildcard" {
   folder      = var.folder
   description = each.value.description
   ip_wildcard = each.value.ip_wildcard
-
-
 }
