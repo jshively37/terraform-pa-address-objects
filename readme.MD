@@ -11,3 +11,27 @@ By using this software, you agree that:
 * No support requests, issues, or pull requests will be acknowledged or addressed
 
 Use at your own discretion.
+
+## Requirements
+
+| Package   | Version |
+|-----------|---------|
+| terraform | 1.14.7  |
+
+Note: This project has yet to be tested on OpenTofu.
+
+To install Terraform, use the following link: https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli.
+
+## Preparing to run
+* Clone this repo
+* Authentication will be passed via environmental variables:
+  *  export SCM_SCOPE='tsg_id:{{ tsg_id }}'
+  *  export SCM_CLIENT_SECRET='{{ client_secret }}'
+  *  export SCM_CLIENT_ID='{{ client_id }}'
+* Run `terraform init`.
+
+## Passing variables via a file
+* Create a `terraform.tfvars` file.
+  * `terraform.tfvars.example` is an example of the expected outputs.
+* Run `terraform plan`.
+* If you are happy with the output run `terraform apply`.
